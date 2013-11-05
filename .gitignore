@@ -1,3 +1,16 @@
+#orchard stock code
+/lib/
+/*.cmd
+/*.proj
+/*.txt
+/src/*
+!/src/Orchard.Web/
+/src/Orchard.Web/*
+!/src/Orchard.Web/Themes/
+/src/Orchard.Web/Themes/SafeMode/
+/src/Orchard.Web/Themes/TheAdmin/
+/src/Orchard.Web/Themes/TheThemeMachine/
+
 # Build Folders (you can keep bin if you'd like, to store dlls and pdbs)
 [Bb]in/
 [Oo]bj/

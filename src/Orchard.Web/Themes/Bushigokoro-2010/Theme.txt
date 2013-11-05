@@ -1,0 +1,7 @@
+Name: Bushigokoro-2010
+Author: Jason Carter
+Website: http://www.carterjk.com
+Description: Black and red theme used by the Bujinkan Bushigokoro Dojo.
+Version: 1.0
+# todo: provide tags
+# Tags: Classic, Serif

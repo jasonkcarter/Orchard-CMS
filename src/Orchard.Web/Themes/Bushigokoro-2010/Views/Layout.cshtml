@@ -1,0 +1,112 @@
+﻿@{
+    Style.Include("Style.css");
+    SetMeta(name: "author", content: "Jason K. Carter");
+    SetMeta(name: "copyright", content: "Bujinkan Bushigokoro Dojo");
+    SetMeta(name: "revisit-after", content: "3 days");
+    SetMeta(name: "keywords", content: "martial arts, master, black belt, self defense, self protection, ninja, ninjitsu, ninpo, shinobi, samurai, bushido, kobudo, karate, tae kwon do, tkd, mma, mixed martial arts, ufc, ultimate fighting, kung fu, aikido, judo, jiu jitsu, brazilian jiujitsu, bjj, krav maga, muay thai, boxing, kickboxing, cardio kickboxing, crystal lake, lake in the hills, woodstock, mchenry, illinois, sword, fist, fight, fighting, dojo, school, class, instruction, tony, brooks, anthony, japanese, adults, young adults, teens, pre-teens, adolescents, kids, children, women, secret");
+
+    
+    
+    <link rel="shortcut icon" href="http://carter.blob.core.windows.net/media/bushigokoro/images/favicon.ico" />
+    
+    /* Some useful shortcuts or settings
+    ***************************************************************/
+
+    Func<dynamic, dynamic> Zone = x => Display(x); // Zone as an alias for Display to help make it obvious when we're displaying zones
+}
+<div id="wrapper">
+    <!-- HEADER BAR -->
+
+    <div id="header">
+        <div id="logoheader">
+            <div id="logo">
+                <a href="/"><img src="http://carter.blob.core.windows.net/media/bushigokoro/images/header_logo_black.png" width="75" height="75" alt="Home"/></a>
+            </div>
+
+            <div id="textheader">
+                <h1>Bujinkan Bushigokoro Dojo</h1>
+                1320 Dean Street, Woodstock, Illinois 60098
+            </div>
+            <script type="text/javascript">
+                function paypalSelected(select) {
+                    if (select.value != '') {
+                        document.location = "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&submit&hosted_button_id=" + select.value;
+                    }
+                }
+            </script>
+            <div id="registerheader">
+                Call (815) 893-9330, or:<br />
+                <select id="paypal-dropdown" onchange="paypalSelected(this)">
+                    <option value="">Select a package to register...</option>
+                    <option value="7YRASFM84EFD2">1x/ week, 1 person, 1 mo: $55</option>
+                    <option value="PEBY5F3ND3CFS">2x/ week, 1 person, 1 mo: $95</option>
+                    <option value="JML4QN3RNPG62">Custom rate...</option>
+                </select><br />
+                <a href="/register"><img src="http://carter.blob.core.windows.net/media/bushigokoro/images/register_horiz_black.png" width="244" height="28" alt="Register" /></a>
+            </div>
+        </div>
+
+        <div class="clearFloat"></div>
+    </div>
+
+    <!-- NAVIGATION MENU -->
+
+
+    <div id="NavMenu" runat="server">
+        <div style="float: right;">
+            <a href="http://www.facebook.com/crystallakemartialarts">
+                <img src="http://carter.blob.core.windows.net/media/bushigokoro/images/FacebookButton.png" title="Follow Bujinkan Bushigokoro Dojo on our Facebook fan page to connect with ninja students and parents, and keep up to date on announcements, upcoming events, photo galleries, and contests." height="24" width="97" /></a>
+            <g:plusone count="false"></g:plusone>
+        </div>
+        <ul id="nav">
+        @if (Model.Navigation != null)
+        {
+            @Zone(Model.Navigation)
+        }
+        </ul>
+    </div>
+    <div id="content">
+        
+        @if (Model.BannerLink != null && Model.BannerImage != null)
+        {
+            <div id="topBannerLayer">
+                <a href="@Model.BannerLink"><img id="banner-image" runat="server" Width="738" Height="84" src="@Model.BannerImage" /></a>
+                <div class="clearFloat"></div>
+            </div>
+        }
+        @if (Model.TopContent != null)
+        {
+            @Zone(Model.TopContent)
+        }
+        <div id="post-2">
+            <div id="post_container">
+                <h2>@Display(Model.Title)</h2>
+                <div class="entry">
+                    @Display(Model.Body)
+                    <div class="clearFloat"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div style="float: right; margin-left: 12px;">&raquo;  <a id="A1" href="/contact">Directions & Contact Information</a></div>
+        <p>Located in Woodstock, IL, a city in the northwest suburbs of Chicago.</p>
+        <p>
+            Just a short drive from
+                  Aldon, Algonquin, Cary, Crystal Lake, Harvard, Hebron, Huntley, Lake in the Hills, 
+                  Marengo, McHenry, and Wonder Lake
+        </p>
+        <p><a href="http://goo.gl/maps/g3Qcp">A 23 minute walk from the Woodstock Metra station</a>.</p>
+    </div>
+    <div id="copyright">
+        Copyright &copy; 2010, Bujinkan Bushigokoro Dojo, All Rights Reserved.
+              <p>Dedicated to teaching authentic ninja and samurai Japanese kobudo martial combat arts.</p>
+    </div>
+</div>
+
+<script type="text/javascript" 
+        src="http://carter.blob.core.windows.net/media/bushigokoro/scripts/jquery.js"></script>
+<script type="text/javascript" 
+        src="http://carter.blob.core.windows.net/media/bushigokoro/scripts/google_analytics_bushigokoro@yahoo.com.js"></script>
+<script type="text/javascript" 
+        src="https://apis.google.com/js/plusone.js"></script>
