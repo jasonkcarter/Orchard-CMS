@@ -1,0 +1,33 @@
+﻿@using Orchard.Mvc.Html;
+@using Orchard.UI.Resources;
+@* ReSharper disable Html.PathError *@
+@{
+    RegisterLink(new LinkEntry { Type = "image/x-icon", Rel = "shortcut icon", Href = Url.Content("~/modules/orchard.themes/Content/orchard.ico") });
+    Script.Include("respond.js").AtHead();
+    Script.Include("modernizr-2.6.2.js").AtHead();
+    Script.Include("html5.js").UseCondition("lt IE 9").AtHead();
+    
+    Style.Include("normalize.css").AtHead();
+    Style.Include("main.css").AtHead();
+    
+    Script.Require("jquery").AtHead().UseCdn();
+
+    string title = Convert.ToString(Model.Title);
+    string siteName = Convert.ToString(WorkContext.CurrentSite.SiteName);
+}
+@* ReSharper restore Html.PathError *@
+<!DOCTYPE html> 
+<html lang="@WorkContext.CurrentCulture" class="@Html.ClassForPage()"> 
+<head> 
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@Html.Title(title, siteName)</title> 
+    @Display(Model.Head)
+    <script>        (function (d) { d.className = "dyn" + d.className.substring(6, d.className.length); })(document.documentElement);</script> 
+</head> 
+<body>
+@* Layout (template) is in the Body zone @ the default position (nothing, zero, zilch) *@
+@Display(Model.Body)
+@Display(Model.Tail)
+</body>
+</html>

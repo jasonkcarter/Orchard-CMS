@@ -53,6 +53,36 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CarterJK-2013\Scripts\html5shiv-printshiv.js" />
+    <Content Include="CarterJK-2013\Scripts\html5shiv.js" />
+    <None Include="CarterJK-2013\Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="CarterJK-2013\Scripts\jquery-1.9.1.js" />
+    <Content Include="CarterJK-2013\Scripts\knockout-2.3.0.js" />
+    <Content Include="CarterJK-2013\Scripts\modernizr-2.6.2.js" />
+    <Content Include="CarterJK-2013\Scripts\r.js" />
+    <Content Include="CarterJK-2013\Scripts\require.js" />
+    <Content Include="CarterJK-2013\Scripts\respond.js" />
+    <Content Include="CarterJK-2013\Styles\Images\gallery-butterfly-double.jpg" />
+    <Content Include="CarterJK-2013\Styles\Images\gallery-butterfly-large.jpg" />
+    <Content Include="CarterJK-2013\Styles\Images\gallery-butterfly-small.jpg" />
+    <Content Include="CarterJK-2013\Styles\Images\joy-in-the-fall.jpg" />
+    <Content Include="CarterJK-2013\Styles\Images\subtle_carbon.png" />
+    <Content Include="CarterJK-2013\Styles\Images\subtle_carbon_%402X.png" />
+    <Content Include="CarterJK-2013\Styles\tiles.css" />
+    <Content Include="CarterJK-2013\Styles\main.css" />
+    <Content Include="CarterJK-2013\Styles\normalize.css" />
+    <Content Include="CarterJK-2013\Web.config" />
+    <Content Include="CarterJK-2013\Views\Web.config" />
+    <Content Include="CarterJK-2013\Scripts\Web.config" />
+    <Content Include="CarterJK-2013\Styles\Web.config" />
+    <Content Include="CarterJK-2013\Content\Web.config" />
+    <Content Include="CarterJK-2013\Theme.txt" />
+    <Content Include="CarterJK-2013\Theme.png" />
+    <Content Include="CarterJK-2013\Placement.info" />
+    <Content Include="CarterJK-2013\Views\Document.cshtml" />
+    <Content Include="CarterJK-2013\Views\Layout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="Bushigokoro-2010\Styles\border-radius-ie8.htc" />
     <Content Include="Bushigokoro-2010\Styles\border-radius.htc" />
     <Content Include="Bushigokoro-2010\Styles\Fonts\Qlassik\Dimitri Castrigue License.txt" />
@@ -208,6 +238,7 @@
   <ItemGroup>
     <Folder Include="Bushigokoro-2010\Zones\" />
     <Folder Include="Carter-Jello\Zones\" />
+    <Folder Include="CarterJK-2013\Zones\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Carter-Jello\Views\Layout.cshtml" />
