@@ -62,12 +62,12 @@
     <Content Include="CarterJK-2013\Scripts\r.js" />
     <Content Include="CarterJK-2013\Scripts\require.js" />
     <Content Include="CarterJK-2013\Scripts\respond.js" />
-    <Content Include="CarterJK-2013\Styles\Images\gallery-butterfly-double.jpg" />
-    <Content Include="CarterJK-2013\Styles\Images\gallery-butterfly-large.jpg" />
-    <Content Include="CarterJK-2013\Styles\Images\gallery-butterfly-small.jpg" />
-    <Content Include="CarterJK-2013\Styles\Images\joy-in-the-fall.jpg" />
-    <Content Include="CarterJK-2013\Styles\Images\subtle_carbon.png" />
-    <Content Include="CarterJK-2013\Styles\Images\subtle_carbon_%402X.png" />
+    <Content Include="CarterJK-2013\Content\Images\gallery-butterfly-double.jpg" />
+    <Content Include="CarterJK-2013\Content\Images\gallery-butterfly-large.jpg" />
+    <Content Include="CarterJK-2013\Content\Images\gallery-butterfly-small.jpg" />
+    <Content Include="CarterJK-2013\Content\Images\joy-in-the-fall.jpg" />
+    <Content Include="CarterJK-2013\Content\Images\subtle_carbon.png" />
+    <Content Include="CarterJK-2013\Content\Images\subtle_carbon_%402X.png" />
     <Content Include="CarterJK-2013\Styles\tiles.css" />
     <Content Include="CarterJK-2013\Styles\main.css" />
     <Content Include="CarterJK-2013\Styles\normalize.css" />
@@ -78,7 +78,9 @@
     <Content Include="CarterJK-2013\Content\Web.config" />
     <Content Include="CarterJK-2013\Theme.txt" />
     <Content Include="CarterJK-2013\Theme.png" />
-    <Content Include="CarterJK-2013\Placement.info" />
+    <Content Include="CarterJK-2013\Placement.info">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="CarterJK-2013\Views\Document.cshtml" />
     <Content Include="CarterJK-2013\Views\Layout.cshtml" />
   </ItemGroup>
@@ -111,9 +113,9 @@
     <Content Include="Bushigokoro-2010\Placement.info" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Carter-Jello\Styles\Images\YellowBackColumn.png" />
-    <Content Include="Carter-Jello\Styles\Images\YellowBackRow.png" />
-    <Content Include="Carter-Jello\Styles\Images\YellowSwooshBack.jpg" />
+    <Content Include="Carter-Jello\Content\Images\YellowBackColumn.png" />
+    <Content Include="Carter-Jello\Content\Images\YellowBackRow.png" />
+    <Content Include="Carter-Jello\Content\Images\YellowSwooshBack.jpg" />
     <Content Include="Carter-Jello\Styles\Style.css" />
     <Content Include="Carter-Jello\Styles\Style.min.css">
       <DependentUpon>Style.css</DependentUpon>

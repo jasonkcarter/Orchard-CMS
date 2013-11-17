@@ -101,7 +101,7 @@ body {
     margin-left: 2em;
     margin-right: 2em;
     background-color: #222222;
-    background-image: url(Images/subtle_carbon.png);
+    background-image: url('../Content/Images/subtle_carbon.png');
     background-position: bottom center;
     background-repeat: repeat;
 
@@ -374,11 +374,6 @@ header {
     #body {
         padding-right: 20px;
     }
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-       only screen and (min-resolution: 144dpi) {
-    /* Style adjustments for high resolution devices */
 }
 
 /* ==========================================================================

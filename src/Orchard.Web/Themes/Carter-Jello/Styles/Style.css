@@ -1,6 +1,6 @@
 ﻿body {
 	background-color: #fedeb5;
-	background-image: url('Images/YellowBackColumn.png');
+	background-image: url('../Content/Images/YellowBackColumn.png');
 	background-repeat: repeat-y;
 }
 #background {
@@ -10,11 +10,11 @@
 	width:100%;
 	height:932px;
 	z-index:2;
-	background-image: url('Images/YellowBackRow.png');
+	background-image: url('../Content/Images/YellowBackRow.png');
 	background-repeat: repeat-x;
 }
 #background-image {
-    background-image: url('Images/YellowSwooshBack.jpg');
+    background-image: url('../Content/Images/YellowSwooshBack.jpg');
     width:780px;
     height: 932px;
     display: inline-block;
