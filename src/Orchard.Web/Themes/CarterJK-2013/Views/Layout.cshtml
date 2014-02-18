@@ -4,5 +4,7 @@
 <div id="container"
     ><section id="title"><div><h1><a href="/">@siteName</a></h1></div></section
     >@if (Model.Icon != null || Model.Header != null) {<header>@if (Model.Icon != null) 
-     {<div id="top-nav">@Display(Model.Icon)</div>}@if (Model.Header != null) {<span id="heading"><span>@Display(Model.Header)</span></span>}</header>}<div id="body">@Display(Model.Content)</div
+     {<div id="top-nav">@Display(Model.Icon)</div>}@if (Model.Header != null) {<span id="heading"><span>@Display(Model.Header)</span></span>}</header>}<div id="body">@Display(Model.Content)@if (Model.ContentAfter != null) {
+    Display(Model.ContentAfter);
+}</div
 ></div>

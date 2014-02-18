@@ -113,6 +113,7 @@ h1,h2,h3,h4,h5 {
 
 h1 {
     font-size: 1.5em;
+    margin-bottom: 0;
 }
 h2 {
     font-size: 1.4em;
@@ -166,7 +167,21 @@ h5 {
 
 header {
     font-weight: lighter;
+    display: block;
+}
+
+
+a, a:visited {
+    color: #191970;
+    text-decoration: none;
+}
+header h1, .blog-post h1 a, .blog-post h1 a:visited {
     color: purple;
+}
+.blog header {
+    display: none;
+}
+.blog-post header {
     display: block;
 }
 
@@ -207,8 +222,27 @@ header {
     }
 
 
+/* Content lists and details */
+
+.content-items { padding: 0; margin: 0; list-style: none; }
+.content-items li { padding: 0; margin: 0; }
+.content-items .content-item { border-bottom: 1px solid #dbdbdb; }
+.metadata .published {
+    display: inline;
+    margin: 0 6px 0 0;
+    font-size: 1em;
+    color: #999999;
+}
 
 
+/* Pager
+***************************************************************/
+
+.pager { list-style: none; padding: 0; margin: 12px 0 0 0; }
+.pager li { float: left; padding: 0 12px 0 0; margin: 0; }
+.pager a, .pager span { font-size: 1.077em; display: block; background-color: #dbdbdb; padding: 6px 6px; color: #434343;}
+.pager a:hover { background-color: #434343; color: #fff; }
+.pager span { background-color:inherit; }
 
 
 /* ==========================================================================

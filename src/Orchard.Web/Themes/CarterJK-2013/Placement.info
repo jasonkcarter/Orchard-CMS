@@ -14,4 +14,5 @@
     <Place Parts_Common_Metadata="-"/>
   </Match>
 -->
+  <Place Parts_Tags_ShowTags="Content:after"/>
 </Placement>

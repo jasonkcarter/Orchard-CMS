@@ -53,6 +53,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CarterJK-2013\Content\favicon.ico" />
     <Content Include="CarterJK-2013\Scripts\html5shiv-printshiv.js" />
     <Content Include="CarterJK-2013\Scripts\html5shiv.js" />
     <None Include="CarterJK-2013\Scripts\jquery-1.9.1.intellisense.js" />

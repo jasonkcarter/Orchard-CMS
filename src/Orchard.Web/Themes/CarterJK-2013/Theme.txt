@@ -3,3 +3,4 @@ Author: Jason Carter
 Website: http://www.carterjk.com
 Description: Responsive tile-based purple and blue theme.
 Version: 1.0
+Zones: Content, AfterContent
